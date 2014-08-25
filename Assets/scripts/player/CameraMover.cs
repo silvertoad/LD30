@@ -11,12 +11,19 @@ public class CameraMover : MonoBehaviour
     [SerializeField] float TopSpeed;
 
     bool isVerticalDirection = true;
+    float defaultSpeed;
+
+    void Awake ()
+    {
+        defaultSpeed = MoveSpeed;
+    }
 
     void FixedUpdate ()
     {   
         Facade.I.CurrentPosition = transform.position.y;
+        var adjustSpeed = Acceleration / 1000f * defaultSpeed;
 
-        MoveSpeed += (Acceleration / 1000f);
+        MoveSpeed += adjustSpeed;
         MoveSpeed = Math.Min (MoveSpeed, TopSpeed);
 
         var movementValue = MoveSpeed / 1000f;

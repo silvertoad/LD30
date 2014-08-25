@@ -18,10 +18,8 @@ public class Player : MonoBehaviour
         mouseClick.z = transform.position.z - Camera.main.transform.position.z;
         var target = Camera.main.ScreenToWorldPoint (mouseClick);
 
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Direction.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - Direction.position);
-
-        //Direction.localPosition.Se = new Quaternion (0f, 0f, , 0f);
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+        Direction.rotation = Quaternion.LookRotation (Vector3.forward, mousePos - Direction.position);
     }
 
     void FixedUpdate ()
