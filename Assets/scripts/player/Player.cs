@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 
+[RequireComponent (typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
+    [SerializeField] Transform Direction;
+
     Rigidbody2D body;
 
     void Awake ()
@@ -14,7 +17,11 @@ public class Player : MonoBehaviour
         var mouseClick = Input.mousePosition;
         mouseClick.z = transform.position.z - Camera.main.transform.position.z;
         var target = Camera.main.ScreenToWorldPoint (mouseClick);
-        Debug.DrawLine (target, transform.position);
+
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Direction.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - Direction.position);
+
+        //Direction.localPosition.Se = new Quaternion (0f, 0f, , 0f);
     }
 
     void FixedUpdate ()
