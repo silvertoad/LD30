@@ -2,11 +2,11 @@
 
 public class EntryPoint : MonoBehaviour
 {
-    [SerializeField] GameObject world;
+    [SerializeField] GameObject WorldContainer;
 
     public void Awake ()
     {
-        var map = GameUtils.InstantiateAt<MapWidget> ("world/map/Map", world);
-        map.AddRegion ();
+        Facade.I.Init (WorldContainer);
+        Facade.I.Controller.StartNewGame ();
     }
 }
