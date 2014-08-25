@@ -6,13 +6,7 @@ public class MapWidget : MonoBehaviour
 {
     float lastPos = 0f;
     List<Region> regions = new List<Region> ();
-    CameraMover mover;
     bool isRunFirstTime = true;
-
-    void Awake ()
-    {
-        mover = GameObject.Find ("WorldCamera").GetComponent<CameraMover> ();
-    }
 
     void Update ()
     {
@@ -24,7 +18,8 @@ public class MapWidget : MonoBehaviour
     public void AddRegion ()
     {
         var region = Facade.I.Generator.GetNextRegion ();
-        if (isRunFirstTime) {
+    
+        if (isRunFirstTime && Facade.I.IsTutorialComplete) {
             var regionList = region.ToList ();
             for (var i = 0; i < 25; i++)
                 regionList.AddRange (Facade.I.Defs.DiscoPreset.Regions [0]);

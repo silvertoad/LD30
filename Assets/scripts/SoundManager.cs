@@ -54,7 +54,6 @@ public class SoundManager : MonoBehaviour {
 
     public static GameObject getEffectEmitter()
     {
-
         if (effectPlayer == null)
         {
             effectPlayer = new GameObject();

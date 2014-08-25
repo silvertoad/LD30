@@ -13,6 +13,7 @@ public class GameController
     public void StartNewGame ()
     {
         AddNew ("world/Game", "world/ParallaxCamera", "world/WorldCamera", "world/player/player");
+        SoundManager.play ("Sounds/discoTheme");
     }
 
     void AddNew (params string[] _names)

@@ -10,6 +10,8 @@ public class RegionGenerator
     public int[][] GetNextRegion ()
     {
         var region = GetRegionPart ().ToList ();
+        if (!Facade.I.IsTutorialComplete)
+            region.AddRange (CurrentPreset.Regions [17]);
         while (region.Count < minRegionLength)
             region.InsertRange (0, CurrentPreset.Regions [0]);
         return region.ToArray ();

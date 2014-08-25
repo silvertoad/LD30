@@ -20,6 +20,8 @@ public class Facade
 
     public float CurrentPosition;
 
+    public bool IsTutorialComplete;
+
     public Facade ()
     {
         Defs = new Definitions ();

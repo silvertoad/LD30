@@ -4,7 +4,7 @@
 public class Player : MonoBehaviour
 {
     [SerializeField] Transform Direction;
-
+    [SerializeField] Animator ImpulseAnimation;
     Rigidbody2D body;
 
     void Awake ()
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
             var mouseClick = Input.mousePosition;
             mouseClick.z = transform.position.z - Camera.main.transform.position.z;
             var target = Camera.main.ScreenToWorldPoint (mouseClick);
-
+            ImpulseAnimation.SetTrigger ("impulse");
             body.AddForce ((target - transform.position) * -5, ForceMode2D.Impulse);
         }
     }

@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5.5500021
   Acceleration: 4
-  TopSpeed: 60
+  TopSpeed: 50
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1

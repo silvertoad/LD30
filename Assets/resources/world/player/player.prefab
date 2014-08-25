@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Direction: {fileID: 400002}
+  ImpulseAnimation: {fileID: 9500002}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -221,7 +222,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 6b20d4c827dd64400bc491b10829cf27, type: 3}
+  m_Sprite: {fileID: 21300020, guid: 6b20d4c827dd64400bc491b10829cf27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
