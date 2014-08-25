@@ -12,7 +12,7 @@ public class GameController
 
     public void StartNewGame ()
     {
-        AddNew ("world/Game", "world/WorldCamera", "world/player/player");
+        AddNew ("world/Game", "world/ParallaxCamera", "world/WorldCamera", "world/player/player");
     }
 
     void AddNew (params string[] _names)
