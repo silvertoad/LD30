@@ -1,18 +1,21 @@
 ﻿using System;
 using UnityEngine;
 
-public class Tutorial : MonoBehaviour
+namespace tutorial
 {
-    [SerializeField] Trigger completeTutorTrigger;
-
-    void Awake ()
+    public class Tutorial : MonoBehaviour
     {
-        completeTutorTrigger.OnTrigger += CompleteTutorialHandler;
-    }
+        [SerializeField] Trigger completeTutorTrigger;
 
-    void CompleteTutorialHandler ()
-    {
-        Facade.I.IsTutorialComplete = true;
-        Destroy (gameObject);
+        void Awake ()
+        {
+            completeTutorTrigger.OnTrigger += CompleteTutorialHandler;
+        }
+
+        void CompleteTutorialHandler ()
+        {
+            Facade.I.IsTutorialComplete = true;
+            Destroy (gameObject);
+        }
     }
 }

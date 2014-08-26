@@ -1,21 +1,24 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent (typeof(Collider2D))]
-public class Trigger : MonoBehaviour
+namespace tutorial
 {
-    public Action OnTrigger;
-
-    void OnTriggerEnter2D (Collider2D _collision)
+    [RequireComponent (typeof(Collider2D))]
+    public class Trigger : MonoBehaviour
     {
-        var player = _collision.gameObject.GetComponent<Player> ();
-        if (player != null) {
-            OnTrigger ();
+        public Action OnTrigger;
+
+        void OnTriggerEnter2D (Collider2D _collision)
+        {
+            var player = _collision.gameObject.GetComponent<Player> ();
+            if (player != null) {
+                OnTrigger ();
+            }
         }
-    }
 
-    void OnDestroy ()
-    {
-        OnTrigger = null;
+        void OnDestroy ()
+        {
+            OnTrigger = null;
+        }
     }
 }

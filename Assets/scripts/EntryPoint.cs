@@ -7,6 +7,5 @@ public class EntryPoint : MonoBehaviour
     public void Awake ()
     {
         Facade.I.Init (WorldContainer);
-        Facade.I.Controller.StartNewGame ();
     }
 }
