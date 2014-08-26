@@ -579,6 +579,14 @@ Prefab:
       propertyPath: uiCamera
       value: 
       objectReference: {fileID: 371015065}
+    - target: {fileID: 400004, guid: b3d1a235381e046d496e0fd0e19a3dfd, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1365.81409
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b3d1a235381e046d496e0fd0e19a3dfd, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1023.99994
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3d1a235381e046d496e0fd0e19a3dfd, type: 2}
   m_RootGameObject: {fileID: 1941810914}
