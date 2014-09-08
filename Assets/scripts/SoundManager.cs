@@ -82,6 +82,7 @@ public class SoundManager : MonoBehaviour {
     public static void playEffect(AudioClip clip, float fadeOut = 0f, float fadeIn = 0f)
     {
         getEffectPlayer().playMusic(clip, fadeOut, fadeIn);
+		Destroy (effectPlayer, (float)clip.length);
     }
 
     public static void playEffect(string name, float fadeOut = 0f, float fadeIn = 0f)

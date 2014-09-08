@@ -14,6 +14,7 @@ public class ItemState: MonoBehaviour
     void OnCollisionEnter2D (Collision2D _collision)
     {
         CheckPlayer (_collision.gameObject);
+		SoundManager.playEffect ("Sounds/WalHit", 0, 0);
     }
 
     void OnTriggerEnter2D (Collider2D _collision)

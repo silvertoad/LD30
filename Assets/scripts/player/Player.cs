@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
             mouseClick.z = transform.position.z - Camera.main.transform.position.z;
             var target = Camera.main.ScreenToWorldPoint (mouseClick);
             ImpulseAnimation.SetTrigger ("impulse");
+			//SoundManager.playEffect("Sounds/Impuls", 0, 0); this sound is shit)))
             body.AddForce ((target - transform.position) * -5, ForceMode2D.Impulse);
         }
     }

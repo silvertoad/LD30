@@ -9,5 +9,6 @@ public class CoinState : ItemState
     {
         _player.CollectCoin (Amount);
         Destroy (gameObject.transform.parent.gameObject);
+		SoundManager.playEffect ("Sounds/PickUp", 0, 0);
     }
 }
