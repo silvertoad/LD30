@@ -28,6 +28,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400002}
+  - 95: {fileID: 9500002}
   m_Layer: 0
   m_Name: disco
   m_TagString: Untagged
@@ -47,6 +48,7 @@ GameObject:
   - 50: {fileID: 5000002}
   - 212: {fileID: 21200002}
   - 114: {fileID: 11400004}
+  - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: rock
   m_TagString: Untagged
@@ -161,6 +163,34 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .649999976, y: .649999976}
   m_Center: {x: 0, y: 0}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad2c515fa9fc34e8aa5d075682bef869, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+--- !u!95 &9500002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad2c515fa9fc34e8aa5d075682bef869, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1

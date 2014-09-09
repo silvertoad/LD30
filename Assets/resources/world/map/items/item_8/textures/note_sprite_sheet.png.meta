@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 2198adaf7c2474e2895d51de035148de
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: note_sprite_sheet
+    21300002: note_sprite_sheet_0
+    21300004: note_sprite_sheet_1
+    21300006: note_sprite_sheet_2
+    21300008: note_sprite_sheet_3
+    21300010: note_sprite_sheet_4
+    21300012: note_sprite_sheet_5
+    21300014: note_sprite_sheet_6
+    21300016: note_sprite_sheet_7
+    21300018: note_sprite_sheet_8
+    21300020: note_sprite_sheet_9
+    21300022: note_sprite_sheet_10
+    21300024: note_sprite_sheet_11
+    21300026: note_sprite_sheet_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: note_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 193
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 193
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 193
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 193
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 129
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 129
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 129
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 129
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 65
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 65
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 65
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: note_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
